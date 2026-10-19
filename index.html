@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Harneet, backend-focused MERN developer" />
+  <title>Harneet | Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+</head>
+<body class="bg-paper font-sans text-ink antialiased dark:bg-[#0d0d0d] dark:text-paper">
+
+  <header class="sticky top-0 z-40 border-b border-black/10 bg-paper/90 backdrop-blur dark:border-white/10 dark:bg-[#0d0d0d]/90">
+    <nav class="flex items-center justify-between px-6 py-4">
+      <a href="#home" class="text-sm font-medium uppercase tracking-[0.15em]">Harneet Singh</a>
+      <div class="flex items-center gap-6">
+        <ul class="hidden items-center gap-8 text-sm text-neutral-900 md:flex dark:text-white">
+          <li><a href="#about" class="hover:text-red-500">About</a></li>
+          <li><a href="#skills" class="hover:text-red-500">Skills</a></li>
+          <li><a href="#projects" class="hover:text-red-500">Projects</a></li>
+          <li><a href="#contact" class="hover:text-red-500">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" aria-label="Toggle theme" class="text-lg"></button>
+        <button id="menu-btn" aria-label="Toggle menu" class="text-xl md:hidden">☰</button>
+      </div>
+    </nav>
+    <ul id="mobile-menu" class="hidden space-y-4 border-t border-black/10 px-6 py-4 text-sm md:hidden dark:border-white/10">
+      <li><a href="#about" class="block">About</a></li>
+      <li><a href="#skills" class="block">Skills</a></li>
+      <li><a href="#projects" class="block">Projects</a></li>
+      <li><a href="#contact" class="block">Contact</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="mx-auto flex min-h-[88vh] max-w-5xl flex-col justify-center px-20 py-20">
+      <p class="text-red-500">Full Stack Developer & Computer Science Graduate</p>
+      <h1 class="max-w-3xl font-serif text-5xl leading-[1.05] sm:text-7xl">
+        Building Full-stack &amp; web apps that <em>people rely on.</em>
+      </h1>
+      <div class="mt-10 flex flex-wrap items-center gap-6">
+        <a href="#projects" class="bg-ink px-6 py-3 text-sm text-paper hover:bg-red-500 dark:bg-paper dark:text-ink dark:hover:bg-red-500">View my work</a>
+        <a href="#contact" class="border-b border-current pb-0.5 text-sm hover:text-red-500">Get in touch →</a>
+      </div>
+      <div class="mt-24 flex items-center gap-4 text-xs uppercase tracking-widest text-neutral-700 dark:text-white dark:text-white dark:text-white dark:text-white dark:text-white dark:text-white dark:text-white">
+        <span class="h-px w-20 bg-neutral-400"></span> Scroll to explore 
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="mx-auto max-w-5xl px-6 py-24">
+      <div class="grid items-start gap-12 md:grid-cols-[1fr_1.4fr]">
+        <div class="aspect-[4/5] w-full overflow-hidden bg-neutral-300 dark:bg-neutral-800">
+          <img src="/profile.jpeg" alt="Portrait of Harneet" class="h-full w-full object-cover grayscale" onerror="this.style.display='none'" />
+        </div>
+        <div>
+          <p class="text-xs uppercase tracking-widest text-neutral-700 dark:text-white dark:text-white dark:text-white dark:text-white dark:text-white dark:text-white">About</p>
+          <h2 class="mt-4 font-serif text-3xl sm:text-4xl">Computer science student, backend at heart.</h2>
+          <p class="mt-6 leading-relaxed text-neutral-600 dark:text-white">
+            I'm a B.Tech Computer Science student building full-stack apps with the MERN stack, with a focus on
+            Node.js backend development. I care about clean APIs, reliable code and shipping projects
+            that actually run in production.
+          </p>
+          <p class="mt-6 leading-relaxed text-neutral-600 dark:text-white">I care deeply about accessibility, performance, and the small details that make software feel right. When I'm not coding I'm sketching interface ideas or reading about type design.</p>
+          <div id="stats" class="mt-10 grid grid-cols-3 gap-4 border-t border-black/10 pt-8 dark:border-white/10"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="bg-ink py-24 text-paper dark:bg-[#171717]">
+      <div class="mx-auto max-w-5xl px-6">
+        <p class="flex items-center gap-4 text-xs uppercase tracking-widest text-neutral-100 dark:text-white dark:text-white dark:text-white dark:text-white dark:text-white dark:text-white">
+          <span class="h-px w-20 bg-red-500"></span> Skills
+        </p>
+        <div id="skills-grid" class="mt-12 grid grid-cols-2 gap-10 md:grid-cols-4"></div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="mx-auto max-w-5xl px-6 py-24">
+      <div class="grid gap-6 md:grid-cols-[1fr_1.4fr]">
+        <p class="text-xs uppercase tracking-widest text-neutral-700 dark:text-white dark:text-white dark:text-white dark:text-white dark:text-white dark:text-white">Projects</p>
+        <p class="text-neutral-600 dark:text-white">
+          A selection of things I've built, from full-stack apps to internship projects. Each one taught me something new.
+        </p>
+      </div>
+      <div id="projects-list" class="mt-14"></div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-ink px-6 py-28 text-center text-paper dark:bg-[#171717]">
+      <h2 class="font-serif text-5xl sm:text-6xl">Let's work <em>together.</em></h2>
+      <p class="mx-auto mt-6 max-w-md text-neutral-700 dark:text-white dark:text-white dark:text-white dark:text-white dark:text-white dark:text-white dark:text-white">
+        I'm actively looking for internship and entry-level opportunities. My inbox is open.
+      </p>
+      <a href="mailto:singh2harneet@gmail.com" class="mt-10 inline-block bg-red-500 px-8 py-4 text-sm text-white hover:opacity-90">singh2harneet@gmail.com</a>
+      <div class="mt-10 flex justify-center gap-8 text-xs uppercase tracking-widest text-neutral-700 dark:text-white dark:text-white dark:text-white dark:text-white dark:text-white dark:text-white dark:text-white">
+        <a href="https://github.com/harneetsingh46" target="_blank" rel="noopener" class="hover:text-white">GitHub</a>
+        <a href="https://www.linkedin.com/in/harneetsingh46/" target="_blank" rel="noopener" class="hover:text-white">LinkedIn</a>
+        <a href="#" target="_blank" rel="noopener" class="hover:text-white">Resume</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-ink px-6 py-6 text-right text-xs text-neutral-700 dark:text-white dark:text-white dark:text-white dark:text-white dark:text-white dark:text-white dark:text-white dark:bg-[#171717]">
+    <div class="border-t border-white/10 pt-6">Designed &amp; built by Harneet</div>
+  </footer>
+
+  <dialog id="modal" class="m-auto w-[92%] max-w-md bg-paper p-0 text-ink backdrop:bg-black/60 dark:bg-[#1a1a1a] dark:text-paper">
+    <div class="p-8">
+      <div id="modal-body"></div>
+      <button id="modal-close" class="mt-8 border border-current px-4 py-2 text-xs uppercase tracking-widest hover:text-red-500">Close</button>
+    </div>
+  </dialog>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
