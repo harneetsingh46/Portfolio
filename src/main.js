@@ -2,25 +2,37 @@ import "./style.css";
 
 // ---------- Edit your content here ----------
 const stats = [
-  { value: "2", label: "Full-stack apps" },
+  { value: "3", label: "Full-stack apps" },
   { value: "4", label: "Internship projects" },
   { value: "2027", label: "Grad year" }, // put your real graduation year
 ];
 
 const skills = {
-  Languages: ["JavaScript", "HTML5", "CSS3"],
-  Frontend: ["React", "Tailwind CSS", "Vite"],
-  Backend: ["Node.js", "Express", "MongoDB", "JWT"],
+  Languages: ["JavaScript (ES6+)", "Python", "SQL", "HTML", "CSS"],
+  Frontend: ["React.js", "React Router", "Tailwind CSS", "Axios", "Context API"],
+  Backend: ["Node.js", "Express.js", "REST APIs", "JWT and cookie-based authentication", "bcrypt"],
+  Databases: ["MongoDB (Mongoose)", "MySQL", "Qdrant (vector database)"],
+  AI: ["Hugging Face", "agentic AI workflows"],
   Tools: ["Git", "GitHub", "Vercel", "VS Code"],
 };
 
 const projects = [
   {
-    title: "NoteShare",
-    desc: "Notes-sharing MERN app with JWT authentication, an Express and MongoDB backend, and a React + Tailwind frontend.",
-    stack: ["React", "Node.js", "Express", "MongoDB"],
-    live: "https://note-share-jet.vercel.app/",
-    repo: "https://github.com/harneetsingh46/NoteShare",
+    title: "RentGuard",
+    desc: "Full-stack rental property management platform with JWT authentication, Razorpay online payments, automated billing, and role-based access control.",
+    stack: [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Razorpay",
+      "Cloudinary",
+      "Brevo",
+    ],
+    live: "https://rentguard.vercel.app/", // update with your actual live link if different
+    repo: "https://github.com/harneetsingh46/RentGuard", // update with your actual repo link if different
   },
   {
     title: "BudgetBaby",
@@ -28,6 +40,13 @@ const projects = [
     stack: ["React", "Node.js", "Express", "MongoDB", "Vercel"],
     live: "https://budget-baby.vercel.app/",
     repo: "https://github.com/harneetsingh46/Budget-Baby",
+  },
+  {
+    title: "NoteShare",
+    desc: "Notes-sharing MERN app with JWT authentication, an Express and MongoDB backend, and a React + Tailwind frontend.",
+    stack: ["React", "Node.js", "Express", "MongoDB"],
+    live: "https://note-share-jet.vercel.app/",
+    repo: "https://github.com/harneetsingh46/NoteShare",
   },
 ];
 // --------------------------------------------
