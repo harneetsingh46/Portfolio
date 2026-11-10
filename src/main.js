@@ -31,7 +31,7 @@ const projects = [
       "Cloudinary",
       "Brevo",
     ],
-    live: "https://rentguard.vercel.app/", // update with your actual live link if different
+    live: "https://rent-guard-1.vercel.app/", // update with your actual live link if different
     repo: "https://github.com/harneetsingh46/RentGuard", // update with your actual repo link if different
   },
   {
